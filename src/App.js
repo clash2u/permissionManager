@@ -6,7 +6,7 @@ import AllPosts from "./Components/AllPosts";
 import AddPost from "./Components/AddPost";
 
 const posts = [{ "id": "1", "title": "My first post", "author": "Someone" }, { "id": "2", "title": "Another post", "author": "Someone else" }, { "id": "3", "title": "A better one", "author": "Stranger" }];
-
+ 
 class App extends Component {
     state = { posts };
 
