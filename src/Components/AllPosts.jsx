@@ -16,6 +16,10 @@ export default class AllPosts extends Component {
         onEdit: () => null,
     }
 
+    componentWillMount(){
+        this.props.subscribeToNewPosts();
+    }
+
     handleDelete = (post) => {
         if (window.confirm('Are you sure')) {
             this.props.onDelete(post);
